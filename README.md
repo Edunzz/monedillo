@@ -104,31 +104,6 @@ EXPORT_PASS=0000             # clave requerida por /exportar
 
 ---
 
-## ▶️ Correr localmente
-
-**Requisitos**: Python 3.11+, cuenta en MongoDB Atlas y OpenRouter API key.
-
-```bash
-git clone <tu-repo>
-cd <tu-repo>
-python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-uvicorn main:app --reload
-```
-
-### Webhook local con ngrok
-```bash
-ngrok http 8000
-# copia la URL https
-curl "https://api.telegram.org/bot<BOT_TOKEN>/setWebhook?url=https://<subdominio>.ngrok.io/<BOT_TOKEN>"
-curl "https://api.telegram.org/bot<BOT_TOKEN>/getWebhookInfo"
-```
-
-> El endpoint **debe** ser exactamente `/<BOT_TOKEN>` (así está en el `main.py`).
-
----
-
 ## 🚀 Despliegue en Render (paso a paso)
 
 1. **New Web Service** → conecta el repo.
@@ -154,7 +129,6 @@ curl "https://api.telegram.org/bot<BOT_TOKEN>/getWebhookInfo"
 - **Koyeb** — arranque rápido, variables por entorno.
 - **Fly.io** — control de regiones; requiere Dockerfile.
 - **Google Cloud Run** — serverless con buen free tier.
-- **Deta Space** — muy amigable para servicios ligeros.
 
 > En todas: expón `/<BOT_TOKEN>` por **HTTPS** público y configura el webhook.
 
