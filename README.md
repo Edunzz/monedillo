@@ -2,11 +2,13 @@
 Telemetría de tu plata 📊💸
 
 ```text
-        ____  ___                       _     _           _ _ _
-       / __ )/   |   ____  _ __   ___  | |__ (_) ___  ___| | | | ___
-      / __  / /| |  / __ \| '_ \ / _ \ | '_ \| |/ _ \/ __| | | |/ _ \
-     / /_/ / ___ | | (_) | | | |  __/ | | | | |  __/\__ \ | | |  __/
-    /_____/_/  |_|  \___/|_| |_|\___| |_| |_|_|\___||___/_|_|_|\___|
+
+███╗░░░███╗░█████╗░███╗░░██╗███████╗██████╗░██╗██╗░░░░░██╗░░░░░░█████╗░
+████╗░████║██╔══██╗████╗░██║██╔════╝██╔══██╗██║██║░░░░░██║░░░░░██╔══██╗
+██╔████╔██║██║░░██║██╔██╗██║█████╗░░██║░░██║██║██║░░░░░██║░░░░░██║░░██║
+██║╚██╔╝██║██║░░██║██║╚████║██╔══╝░░██║░░██║██║██║░░░░░██║░░░░░██║░░██║
+██║░╚═╝░██║╚█████╔╝██║░╚███║███████╗██████╔╝██║███████╗███████╗╚█████╔╝
+╚═╝░░░░░╚═╝░╚════╝░╚═╝░░╚══╝╚══════╝╚═════╝░╚═╝╚══════╝╚══════╝░╚════╝░
 
                       M  O  N  E  D  I  L  L  O
             Observabilidad “just for fun” de finanzas personales
@@ -80,12 +82,11 @@ OPENROUTER_API_KEY=or-xxxxxxxxxxxxxxxxxxxxxxxx
 OPENROUTER_MODEL=mistralai/mistral-7b-instruct   # opcional (default)
 
 # Opcionales
-GOOGLE_SHEET_URL=            # deja vacío si no usarás enlace en reportes
 GROUP_CODE_LENGTH=6          # largo del código de grupo
 EXPORT_PASS=0000             # clave requerida por /exportar
 ```
 
-> **Atlas tip**: agrega IPs salientes de tu plataforma (o `0.0.0.0/0` durante desarrollo). Usa un usuario con permisos mínimos.
+> **Atlas tip**: agrega IPs salientes de tu plataforma (o `0.0.0.0/0` durante desarrollo), para ponerlo a funcionar pon el rango de tu ip donde corra tu app. Usa un usuario con permisos mínimos.
 
 ---
 
@@ -219,13 +220,8 @@ httpx
 certifi
 ```
 
----
-
-## 📜 Licencia
-
-Elige la que prefieras (MIT recomendado).
 
 ---
 
-**Hecho con ❤️ por y para quienes quieren mirar su plata con ojos de observabilidad.**
+**Hecho con ❤️ por Jose Romero para quienes quieren mirar su plata con ojos de observabilidad.**
 **Monedillo** te acompaña con IA para registrar, medir y decidir.
